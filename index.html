@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<style>
+  .page-header h1 {
+      color: #f15a29 !important;
+  }
+
+
+</style>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -19,9 +26,9 @@
         <!-- Custom styles for this template -->
         <link href="starter-template.css" rel="stylesheet">
         <style>
-          body {
+        body {
           font-size:22px;
-          }
+        }
         </style>
     </head>
 
@@ -52,39 +59,69 @@
             <div class="jumbotron" style="background: red">
               <h1>The Ides of DEFCON</h1>
               <p>A wearable hardware badge, featuring blinky lights,
-              sound, a sub-1Ghz radio, games, and more. Based on the
-              Freescale KW01. </p>
+                sound, a sub-1Ghz radio, games, and more. Based on the
+                NXP/Freescale KW01. </p>
             </div>
             <p align="center">
               <img src="img/characters.jpg">
             </p>
+            <!-- defcon, yo -->
+            <div id="clockdiv">
+              <p align="center">
+                <span class="days"></span> days,
+                <span class="hours"></span>
+                hours, 
+                <span class="minutes"></span>
+                minutes, and
+                <span class="seconds"></span>
+                seconds until
+                <a href="https://www.defcon.org/html/defcon-25/dc-25-index.html">
+                  Defcon 25.
+                </a>
+              </p>
+              </div>
+            </div>
+            </p>
             <div class="page-header">
               <h1>Hackaday page</h1>
             </div>
-            Our
+            <p>
+              Our
             <a href="https://hackaday.io/project/14756-the-ides-of-defcon-an-unofficial-electronic-badge">
               Hackaday.io
             </a>
             page has our project log, some build instructions, and our current status report.
+            </p>
             <div class="page-header">
               <h1>Kickstarter</h1>
             </div>
-            Throw us a tip or buy a badge on our
-            <a href="https://www.kickstarter.com/projects/1887776662/indie-defcon-badge-the-ides-of-defcon">
+            <p>
+              Throw us a tip or buy a badge on our
+              <a href="https://www.kickstarter.com/projects/1887776662/indie-defcon-badge-the-ides-of-defcon">
               Kickstarter page!
-            </a>
-          
+              </a>
+
+            </p>
+            <div class="page-header">
+              <H1>Screens</h1>
+              <p>
+                Yeah, we get it. Lots of people broke their screens and we'll never use that screen again.
+                If you want to order a new screen, <a href="screens.html">Ordering information</a> is avaialble.
+              </p>
+            </div>
           <div class="page-header">
             <h1>Source code and PCB</h1>
           </div>
-          If you want to make your own board, you can get our
-          <a href="https://github.com/netik/dc25_spqr_badge">
-            PCB layout
-          </a>
-          and 
-          <a href="https://github.com/netik/chibios-orchard">
-            Firmware source code.
-          </a>
+          <p>
+            If you want to make your own board, you can get our
+            <a href="https://github.com/netik/dc25_spqr_badge">
+              PCB layout
+            </a>
+            and 
+            <a href="https://github.com/netik/chibios-orchard">
+              Firmware source code.
+            </a>
+          </p>
             <P>You will need
               the <a href="https://launchpad.net/gcc-arm-embedded">GNU ARM Toolchain</a>
               to build this code, as well as a
@@ -115,20 +152,26 @@
               http://www.mouser.com/ProductDetail/Embedded-Artists/EA-ACC-040
             </a>
           </p>
-        </div>
-        <div class="page-header">
-        <a name="#about"></a>
-        <h1>About</h1>
+          <div class="page-header">
+            <a name="contact"></a>
+          <a name="about"></a>
+          <h1>About</h1>
         </div>
           <p>
             The ides of defcon is brought to you by John (<a href="https://twitter.com/netik">@netik</a>), Bill Paul, Egan Hirvela, and Matthew Harris.
           </p>
-          <p>Follow us on <a href="https://twitter.com/spqrbadge">Twitter</a>!</p>
+<p>Follow us on <a href="https://twitter.com/spqrbadge">Twitter</a>!</p>
+<p align="center">
+  <img src="img/dangerous.png" width="380"><br/>
+  
+</p>
         </div><!-- /.container -->
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="timer.js"></script>
     </body>
 </html>
+
